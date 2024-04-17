@@ -1,42 +1,151 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html {
+	border-left: 5px solid lightgray;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+body {
+	min-height: 100vh;
+	font-family: sans-serif;
+	max-width: 1000px;
+	margin: auto;
+	padding: 3em;
+	font-size: 18px;
+	line-height: 1.5;
+	background: #FFF;
+	color: #787878;
+	width: 60em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header, main, footer {
+	padding: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
-.card {
-  padding: 2em;
+header {
+	overflow: hidden;
+	margin-bottom: 1em;
 }
 
-.read-the-docs {
-  color: #888;
+
+h1 {
+	color: tomato;
+}
+
+
+header h1 {
+    font-size: 4em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+	color: #df4339;
+}
+
+header h1 a {
+	color: #df4339;
+	text-decoration: none;
+}
+
+header h2 {
+    font-size: 2em;
+    font-weight: normal;
+    color: black;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5em;
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav ul li {
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+}
+
+header nav a {
+	display: block;
+	font-size: 1.25em;
+	color: #787878;
+	text-decoration: underline;
+}
+
+header nav a:hover {
+	color: #df4339;
+}
+
+img {
+	width: 100%;
+}
+
+
+/* blog post title text */
+article h2 {
+    font-size: 2.5em; 
+	color: black;
+}
+article h2 a {
+	color: black;
+}
+
+/* blog "Continues..." text */
+article .continue-link {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: tomato;
+}
+
+
+article {
+    margin-bottom: 4rem; /* Set the margin on the bottom to 4rem */
+    border-bottom: 1px solid lightgray; /* Add a 1px solid border in lightgray to the bottom */
+    padding-bottom: 2rem; /* Add padding on the bottom of 2rem */
+}
+
+article p::first-letter {
+    color: lightgray;
+    font-size: 6em; /* Adjust the font size as desired */
+    float: left;
+    margin-right: 0.5rem; /* Add a small margin between the drop cap and the text */
+    line-height: 1; /* Ensure proper line height for the drop cap */
+}
+
+
+footer {
+	clear: both;
+	color: #BBB;
+}
+
+footer nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+xfooter nav ul li {
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+}
+
+footer nav a {
+	display: block;
+	font-size: 1.25em;
+	color: #df4339;
+	text-decoration: underline;
 }

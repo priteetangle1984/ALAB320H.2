@@ -1,12 +1,7 @@
-import React from 'react';
-
-
-// Header component
-function Header() {
+// Footer component
+function Footer() {
   return (
-    <header>
-      <h1><a href="index.html">Sartre’s List</a></h1>
-      <h2>Better-Dressed People</h2>
+    <footer>
       <nav>
         <ul aria-label="Main Navigation" role="navigation">
           <li><a href="#">Women’s</a></li>
@@ -15,10 +10,12 @@ function Header() {
           <li><a href="#">The Catwalk</a></li>
           <li><a href="#">AdWatch</a></li>
           <li><a href="#">About</a></li>
+          <li><a href="#">Tips</a></li>
         </ul>
       </nav>
-    </header>
+      <p>&copy; 2013 Valet Industries, Inc</p>
+    </footer>
   );
 }
 
-export default Header;
+export default Footer;
